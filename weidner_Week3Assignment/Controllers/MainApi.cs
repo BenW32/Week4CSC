@@ -16,7 +16,8 @@ namespace weidner_Week3Assignment.Controllers
             double sum = 0;
             double counter = 0;
             double mean = 0; // average
-            
+            //added for week 5 function when called loops through unsorted input and logs it on a new line
+            LogObject(lint);
             lint.Sort();
           
             double standardDeviation = 0;
@@ -56,6 +57,17 @@ namespace weidner_Week3Assignment.Controllers
             }
 
             return sList;
+        }
+
+        //added log object function week 5 assigment 
+        void LogObject(List<int> lint)
+        {
+            //foreach loop added week 5 loops through unsorted input
+            foreach (int i in lint)
+            {
+                System.Console.WriteLine(i.ToString());
+            }
+           
         }
     }
 }
